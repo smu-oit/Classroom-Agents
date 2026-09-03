@@ -1,8 +1,0 @@
-{
-  "name": "classroom-agents",
-  "displayName": "Classroom Agents",
-  "version": "1.0.0",
-  "description": "Seven academic specialists for assignment design, feedback, citations, research, and comms.",
-  "author": { "name": "Levi Sterling", "email": "levi@smu.edu" },
-  "license": "MIT"
-}
