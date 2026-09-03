@@ -1,7 +1,6 @@
-# SMU Classroom Agents
+# Classroom Agents
 
-These are seven academic specialists for Claude Cowork and Claude Code.
-You can install the plugin once, then just ask for what you need. Claude figures out which one to use.
+Seven academic specialists for Claude Cowork and Claude Code. Install once, then just ask for what you need. Claude figures out which one to use.
 
 | Ask for | You get |
 | --- | --- |
@@ -13,7 +12,7 @@ You can install the plugin once, then just ask for what you need. Claude figures
 | **Alfred** | Emails, announcements, memos |
 | **Radar** | A written record of what changed and why, for your course file |
 
-**BUT** you don't *have to* name one. Describe the task and Claude routes it. Naming a specialist directly also works.
+You don't have to name one. Describe the task and Claude routes it. Naming a specialist directly also works.
 
 ## Install
 
@@ -32,7 +31,10 @@ In a terminal session, run:
 ```
 /plugin marketplace add smu-oit/Classroom-Agents
 /plugin install classroom-agents@smu-oit
+/reload-plugins
 ```
+
+The last command loads the plugin into your current session. Without it, Claude Code won't pick up the new skill until you restart.
 
 ### Not supported
 
@@ -45,6 +47,14 @@ Ask:
 > Design a 10th-grade discussion prompt on Macbeth.
 
 The reply should open with "Seatbelts everyone!" That's Ms. Frizzle, and confirmation the plugin loaded.
+
+If nothing happens, run `/reload-plugins` and try again. If it still doesn't route, invoke it directly with the task in the same message:
+
+```
+/classroom-agents:classroom-agents design a 10th-grade discussion prompt on Macbeth
+```
+
+Typing the command by itself, with no task attached, just makes it ask what you want.
 
 ## Multi-step paths
 
@@ -74,7 +84,7 @@ Claude pauses between steps so you can see each one before continuing.
 ## Updating
 
 Cowork: reopen Customize, then Plugins, and click Update on the marketplace.
-Claude Code: run `/plugin marketplace update smu-oit`, then reinstall if a new version is listed.
+Claude Code: run `/plugin marketplace update smu-oit`, then reinstall and `/reload-plugins` if a new version is listed.
 
 ## Questions
 
