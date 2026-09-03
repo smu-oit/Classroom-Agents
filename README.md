@@ -1,4 +1,4 @@
-# Classroom Agents
+# SMU Classroom Agents
 
 These are seven academic specialists for Claude Cowork and Claude Code.
 You can install the plugin once, then just ask for what you need. Claude figures out which one to use.
