@@ -1,0 +1,5 @@
+{
+  "name": "smu-oit",
+  "owner": { "name": "SMU OIT" },
+  "plugins": [{ "name": "classroom-agents", "source": "./classroom-agents" }]
+}
